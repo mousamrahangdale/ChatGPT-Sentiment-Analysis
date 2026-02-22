@@ -1,162 +1,173 @@
-📌 Project Overview
-This project implements a complete end-to-end Sentiment Analysis pipeline comparing traditional Machine Learning and Transformer-based Deep Learning approaches.
-The workflow starts with data preprocessing and exploratory analysis, followed by a TF-IDF + Logistic Regression model optimized with Optuna and SMOTE. It then advances to fine-tuning a DistilBERT transformer model. Both models are evaluated, compared, and analyzed using statistical metrics, error comparison, A/B testing, and LLM-based experimentation.
+# 🚀 ChatGPT Sentiment Analysis: ML vs DistilBERT + A/B Testing + LLM
 
-🧠 Project Pipeline
-1️⃣ Data Processing & EDA
+## 📌 Overview
 
-Data loading
+This project implements a complete end-to-end Sentiment Analysis pipeline comparing Traditional Machine Learning and Transformer-based Deep Learning approaches.
 
-Text cleaning & preprocessing
+The workflow includes:
+- Data preprocessing & Exploratory Data Analysis (EDA)
+- TF-IDF + Logistic Regression (optimized with Optuna)
+- Handling class imbalance using SMOTE
+- Fine-tuned DistilBERT model
+- Model comparison & error analysis
+- A/B Testing
+- LLM-based sentiment experimentation
 
-Exploratory Data Analysis
+This notebook demonstrates real-world NLP system design and model benchmarking.
 
-Class distribution analysis
+---
 
-Graph & visualization plots
+## 🧠 Project Pipeline
 
-2️⃣ Traditional ML Model
-🔹 Feature Engineering
+### 1️⃣ Data Processing & EDA
+- Data loading
+- Text cleaning & preprocessing
+- Exploratory Data Analysis
+- Class distribution visualization
+- Graph plots & insights
 
-TF-IDF Vectorization
+---
 
-🔹 Class Imbalance Handling
+### 2️⃣ Traditional ML Model
 
-SMOTE oversampling
+#### 🔹 Feature Engineering
+- TF-IDF Vectorization
 
-🔹 Model
+#### 🔹 Class Imbalance Handling
+- SMOTE (Oversampling)
 
-Logistic Regression
+#### 🔹 Model
+- Logistic Regression
 
-🔹 Hyperparameter Optimization
+#### 🔹 Hyperparameter Optimization
+- Optuna tuning
 
-Optuna for tuning
+#### 🔹 Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Performance Visualization
 
-🔹 Evaluation Metrics
+---
 
-Accuracy
+### 3️⃣ Transformer Model
 
-Precision
+#### 🔹 Model Used
+- Fine-tuned DistilBERT
 
-Recall
+#### 🔹 Process
+- Tokenization using DistilBERT tokenizer
+- Contextual Embeddings
+- Model Fine-tuning
+- Evaluation using same metrics for fair comparison
 
-F1 Score
+#### 🔹 Evaluation
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Performance Visualization
 
-Confusion Matrix
+---
 
-Performance Visualizations
+### 4️⃣ Model Comparison
 
-3️⃣ Transformer Model
-🔹 Model Used
+- ML vs DistilBERT comparison
+- Error Analysis
+- Misclassification inspection
+- Visualization-based performance comparison
+- Statistical comparison
 
-Fine-tuned DistilBERT
+---
 
-🔹 Process
+### 5️⃣ A/B Testing
 
-Tokenization using transformer tokenizer
+- Performance benchmarking
+- Statistical testing between both models
+- Controlled evaluation framework
 
-Contextual embeddings
+---
 
-Model fine-tuning
+### 6️⃣ LLM Integration
 
-Evaluation using same metrics for fair comparison
+- Sentiment prediction using LLM
+- Comparison between:
+  - Logistic Regression
+  - DistilBERT
+  - LLM
+- Advanced NLP experimentation
 
-🔹 Evaluation
+---
 
-Accuracy
+## 🛠️ Tech Stack
 
-Precision
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn (SMOTE)
+- Optuna
+- HuggingFace Transformers
+- PyTorch / TensorFlow
+- LLM API
 
-Recall
+---
 
-F1 Score
+## 📊 Evaluation Metrics
 
-Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Error Analysis
+- A/B Testing Results
 
-Performance Visualizations
+---
 
-4️⃣ Model Comparison
+## ▶️ How to Run
 
-ML vs DistilBERT performance comparison
-
-Error analysis
-
-Misclassification inspection
-
-Visualization-based comparison
-
-Statistical comparison
-
-5️⃣ A/B Testing
-
-Comparative evaluation framework
-
-Statistical comparison between both models
-
-Performance benchmarking
-
-6️⃣ LLM Integration
-
-Testing sentiment output using LLM
-
-Comparing traditional ML, Transformer, and LLM outputs
-
-Advanced NLP experimentation
-
-🛠️ Tech Stack
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-Scikit-learn
-
-SMOTE (Imbalanced-learn)
-
-Optuna
-
-HuggingFace Transformers
-
-PyTorch / TensorFlow
-
-LLM integration
-
-📊 Evaluation Metrics Used
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
-Error Analysis
-
-A/B Testing comparison
-
-📈 Key Learnings
-
-Impact of class imbalance on sentiment models
-
-Performance difference between TF-IDF vs Transformer embeddings
-
-Effect of hyperparameter tuning using Optuna
-
-Practical model benchmarking techniques
-
-Real-world error analysis strategies
-
-Transformer superiority in contextual understanding
-
-▶️ How to Run
-Install Dependencies
+### 1️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-Run Notebook
+```
+
+### 2️⃣ Run Notebook
+```bash
 jupyter notebook
+```
+
+Run all cells sequentially to reproduce the full ML → Transformer → Comparison → A/B → LLM pipeline.
+
+---
+
+## 📈 Key Learnings
+
+- Impact of class imbalance in NLP models
+- TF-IDF vs Transformer Embeddings comparison
+- Hyperparameter tuning using Optuna
+- Error analysis techniques
+- Practical A/B testing for model comparison
+- Real-world NLP system benchmarking
+
+---
+
+## 💼 Project Strength
+
+This project demonstrates:
+
+✔ Strong NLP fundamentals  
+✔ Machine Learning optimization  
+✔ Transformer fine-tuning  
+✔ Model benchmarking strategy  
+✔ Error analysis mindset  
+✔ Experimental AI evaluation  
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
