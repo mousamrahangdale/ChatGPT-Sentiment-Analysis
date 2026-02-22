@@ -1,4 +1,4 @@
-# 🚀 ChatGPT Sentiment Analysis: ML vs DistilBERT + A/B Testing + LLM
+# 🚀 ChatGPT Sentiment Analysis
 
 ## 📌 Overview
 
