@@ -1,0 +1,27 @@
+# ---------------- Basic Libraries ----------------
+numpy
+pandas
+matplotlib
+seaborn
+
+# ---------------- PyTorch ----------------
+torch
+
+# ---------------- Transformers / NLP ----------------
+transformers
+
+# ---------------- Machine Learning ----------------
+scikit-learn
+optuna
+
+# ---------------- Imbalanced Data ----------------
+imbalanced-learn
+
+# ---------------- Visualization ----------------
+wordcloud
+
+# ---------------- API ----------------
+fastapi
+uvicorn
+nest-asyncio
+pydantic
